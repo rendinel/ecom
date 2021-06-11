@@ -9,15 +9,14 @@
     <title>E-com Project</title>
 </head>
 <body>
-    
+    {{ View::make('header') }}
+    @yield('content')
+    {{ View::make('footer') }}
+    <style>
+        .custom-login{
+            height: 500px;
+            padding-top: 100px;
+        }
+    </style>
 </body>
-<script>
-    $(document).ready(function()
-    {
-        $("button").click(function()
-        {
-            alert("all set")
-        })
-    })
-</script>
 </html>
